@@ -19,7 +19,7 @@ class CategoriesScreen extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
         ),
-
+        // DUMMY_CATEGORIES().map().toList()
         children: DUMMY_CATEGORIES
             .map((categoryData) => CategoryItem(
                   // temporary variable to pass it on CategoryItem class
