@@ -27,9 +27,14 @@ class MyApp extends StatelessWidget {
             )),
       ),
       // home: MyHomePage(title: 'DeliMeals'),
-      home: CategoriesScreen(),
+      // instead of using home, we can use the routes default
+      // home: CategoriesScreen(),
 
-      routes: {'/category-meals': (ctx) => CategoryMealsScreen()},
+      initialRoute: '/', // for initial route
+      routes: {
+        '/': (ctx) => CategoriesScreen(),
+        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
+      },
     );
   }
 }

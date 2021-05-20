@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CategoryMealsScreen extends StatelessWidget {
+  // for safer routes
+  static const routeName = '/category-meals';
+
   @override
   Widget build(BuildContext context) {
     // getting the arguments of the pushNamed navigator
