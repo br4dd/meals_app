@@ -23,6 +23,7 @@ class CategoriesScreen extends StatelessWidget {
         children: DUMMY_CATEGORIES
             .map((categoryData) => CategoryItem(
                   // temporary variable to pass it on CategoryItem class
+                  categoryData.id,
                   categoryData.title,
                   categoryData.color,
                 ))
