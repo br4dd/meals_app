@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals_app/widgets/meal_item.dart';
+import '../widgets/meal_item.dart';
 import '../dummy_data.dart';
 
 class CategoryMealsScreen extends StatelessWidget {
@@ -8,7 +8,7 @@ class CategoryMealsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // getting the arguments of the pushNamed navigator
+    // getting the arguments of the pushNamed navigato
     // Map<String, String>
     // String keys and String values
     final routeArgs =
@@ -38,7 +38,9 @@ class CategoryMealsScreen extends StatelessWidget {
         itemBuilder: (ctx, index) {
           // to access the meal from different category
           return MealItem(
+            id: categoryMeals[index].id,
             title: categoryMeals[index].title,
+            color: categoryColor,
             imageUrl: categoryMeals[index].imageUrl,
             duration: categoryMeals[index].duration,
             complexity: categoryMeals[index].complexity,
