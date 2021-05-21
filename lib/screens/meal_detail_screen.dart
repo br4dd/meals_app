@@ -79,6 +79,7 @@ class MealDetailScreen extends StatelessWidget {
                       vertical: 5,
                       horizontal: 10,
                     ),
+                    // output the ingredients
                     child: Text(selectedMeal.ingredients[index]),
                   ),
                 ),

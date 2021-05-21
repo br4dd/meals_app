@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'screens/tab_screen.dart';
 import './screens/error_404.dart';
 import './screens/meal_detail_screen.dart';
-import 'screens/category_meals_screen.dart';
+import './screens/category_meals_screen.dart';
 import 'screens/categories_screen.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'DeliMeals',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // adding styling to the theme
         primarySwatch: Colors.pink,
@@ -29,13 +31,14 @@ class MyApp extends StatelessWidget {
               ),
             ),
       ),
+
       // home: MyHomePage(title: 'DeliMeals'),
       // instead of using home, we can use the routes default
       // home: CategoriesScreen(),
 
       initialRoute: '/', // for initial route
       routes: {
-        '/': (ctx) => CategoriesScreen(),
+        '/': (ctx) => TabScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
