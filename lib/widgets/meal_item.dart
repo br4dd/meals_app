@@ -62,7 +62,6 @@ class MealItem extends StatelessWidget {
       // arguments: id,
       arguments: {
         'id': id,
-        'title': title,
         'color': color,
       },
       // passing it to category_meals_screen

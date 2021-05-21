@@ -20,12 +20,13 @@ class MyApp extends StatelessWidget {
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-                headline6: TextStyle(
-              fontSize: 20,
-              // imported from assets/fonts/ folder
-              fontFamily: 'RobotoCondensed',
-              fontWeight: FontWeight.bold,
-            )),
+              headline6: TextStyle(
+                fontSize: 20,
+                // imported from assets/fonts/ folder
+                fontFamily: 'RobotoCondensed',
+                fontWeight: FontWeight.bold,
+              ),
+            ),
       ),
       // home: MyHomePage(title: 'DeliMeals'),
       // instead of using home, we can use the routes default
