@@ -404,4 +404,37 @@ const DUMMY_MEALS = const [
     isVegetarian: true,
     isLactoseFree: true,
   ),
+  Meal(
+    id: 'm11',
+    categories: [
+      'c8',
+    ],
+    title: 'Lechon',
+    affordability: Affordability.Luxurious,
+    complexity: Complexity.Challenging,
+    imageUrl:
+        'https://cdn.pixabay.com/photo/2021/02/23/17/52/food-6044266_960_720.jpg',
+    duration: 120,
+    ingredients: [
+      '1 whole pig',
+      '3 Onion',
+      '3 Cloves of Garlic',
+      '3 Piece of Ginger',
+      '5 Tablespoons Almonds',
+      '2 Teaspoon Cayenne Pepper',
+      '1000ml Coconut Milk',
+    ],
+    steps: [
+      'Grilled the pig with a big stick',
+      'Circle it',
+      'Add spices and stir fry',
+      'Add oil very 10 minutes',
+      'Add coconut milk',
+      'Wait for 2 hours to cook'
+    ],
+    isGlutenFree: true,
+    isVegan: false,
+    isVegetarian: false,
+    isLactoseFree: true,
+  ),
 ];
