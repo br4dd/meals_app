@@ -71,7 +71,8 @@ class MealDetailScreen extends StatelessWidget {
               // ListView as builder
               ListView.builder(
                 itemBuilder: (ctx, index) => Card(
-                  color: Theme.of(context).accentColor,
+                  // color: Theme.of(context).accentColor,
+                  color: mealColor,
                   // to iterate the list using itemBuilder
                   child: Padding(
                     padding: const EdgeInsets.symmetric(

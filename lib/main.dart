@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/error_404.dart';
 import './screens/meal_detail_screen.dart';
 import 'screens/category_meals_screen.dart';
 import 'screens/categories_screen.dart';
@@ -38,15 +39,15 @@ class MyApp extends StatelessWidget {
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
-      onGenerateRoute: (settings) {
-        print(settings.arguments);
-        // need to search more on what really onGenerateRoute is
-        // but based on my research. this function is rarely used in real life applications
-      },
+      //onGenerateRoute: (settings) {
+      //print(settings.arguments);
+      // need to search more on what really onGenerateRoute is
+      // but based on my research. this function is rarely used in real life applications
+      //},
       onUnknownRoute: (settings) {
         // MORE LIKE ERROR 404 PAGE
         return MaterialPageRoute(
-          builder: (ctx) => CategoriesScreen(),
+          builder: (ctx) => Error404(),
         );
       },
     );
