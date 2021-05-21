@@ -37,6 +37,17 @@ class MyApp extends StatelessWidget {
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
+      onGenerateRoute: (settings) {
+        print(settings.arguments);
+        // need to search more on what really onGenerateRoute is
+        // but based on my research. this function is rarely used in real life applications
+      },
+      onUnknownRoute: (settings) {
+        // MORE LIKE ERROR 404 PAGE
+        return MaterialPageRoute(
+          builder: (ctx) => CategoriesScreen(),
+        );
+      },
     );
   }
 }
