@@ -57,7 +57,6 @@ class MealItem extends StatelessWidget {
 
   void selectMeal(BuildContext ctx) {
     Navigator.of(ctx).pushNamed(
-      // /meal-detail is on the main file routes
       MealDetailScreen.routeName,
       // arguments: id,
       arguments: {
@@ -65,7 +64,12 @@ class MealItem extends StatelessWidget {
         'color': color,
       },
       // passing it to category_meals_screen
-    );
+      // push a page and when this page is pop
+      // then the '''then()''' function executes
+      // returns null if no data is pass along
+    ).then((result) {
+      print(result);
+    });
   }
 
   @override
